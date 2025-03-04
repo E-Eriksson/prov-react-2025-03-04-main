@@ -9,11 +9,11 @@ import { useContext, useEffect } from "react";
 import postContext from "./contexts/postContext";
 
 export default function Question4({ postData }) {
-  const { posts, setPosts } = useContext(postContext);
+  const { post, setPosts } = useContext(postContext);
 
   useEffect(() => {
     setPosts(postData);
-    console.log(posts);
+    console.log(post);
   }, []);
 
   return (
